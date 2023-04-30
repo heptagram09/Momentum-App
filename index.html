@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/genshin.png"
+      sizes="16x16 32x32 64x64"
+    />
+    <title>Main screen</title>
+  </head>
+  <body>
+    <!-- Login tap -->
+    <div id="login">
+      <div id="login-second">
+        <form class="hidden" id="login-form">
+          <div id="login-middle">
+            <div id="login-middle__input">
+              <input
+                type="text"
+                required
+                maxlength="15"
+                placeholder="이름을 적어주세요"
+                id="login-middle__realInput"
+              />
+              <i></i>
+            </div>
+            <input type="submit" value="확인" id="login-submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <header class="header hidden">
+      <h2 id="greeting"></h2>
+
+      <div class="clock">
+        <h3 id="sub-clock"></h3>
+        <h1 id="main-clock">00:00:00</h1>
+      </div>
+    </header>
+
+    <div class="video-span hidden">
+      <span>Today's video</span>
+    </div>
+    <div id="player" class="hidden"></div>
+
+    <main class="main hidden">
+      <div id="todo">
+        <img src="img/img.png" id="todo-img" />
+        <form id="todo-form">
+          <span>Today's quest</span>
+          <input type="text" placeholder="Write and Press Enter" required />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+    </main>
+
+    <footer class="footer hidden">
+      <div id="quote">
+        <span class="quote-title"></span>
+        <span class="quote-title"></span>
+      </div>
+    </footer>
+
+    <div id="weather">
+      <span class="inner-w hidden"></span>
+      <span class="inner-ww hidden"></span>
+    </div>
+
+    <div class="search">
+      <form class="search__bar">
+        <input
+          class="search__bar-txt"
+          required
+          maxlength="158"
+          value=""
+          placeholder="Google 검색 또는 URL 입력"
+        />
+      </form>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/youtube.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>

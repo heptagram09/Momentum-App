@@ -1,0 +1,75 @@
+@import "login.css";
+@import "header.css";
+@import "todo.css";
+@import "quote.css";
+@import "youtube.css";
+
+html {
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.bgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 80%;
+  object-fit: cover;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#weather {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.search {
+  position: absolute;
+  top: 21%;
+  left: 37.5%;
+  width: 30%;
+}
+
+.search__bar {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border-radius: 30px;
+}
+.search__bar-txt {
+  height: 35px;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.5);
+  border: 2px solid black;
+}
+.search__bar-txt::placeholder {
+  color: black;
+}

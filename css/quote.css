@@ -1,0 +1,17 @@
+#quote {
+  width: 100%;
+  position: fixed;
+  bottom: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.quote-title {
+  font-size: 17px;
+  text-shadow: -1.1px 0px black, 0px 1.1px black, 1.1px 0px black,
+    0px -1.1px black;
+}

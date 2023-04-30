@@ -1,0 +1,18 @@
+#greeting {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 13px;
+}
+
+#main-clock {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 70px;
+}
+
+#sub-clock {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -50px;
+}
